@@ -1,0 +1,14 @@
+{
+  "name": "keio.jp自動ログインくん",
+  "manifest_version": 3,
+  "version": "0.1",
+  "author": "fastriver_org",
+  "action": {},
+  "content_scripts": [{
+	  "matches": ["https://auth.keio.jp/idp/profile/SAML2/Redirect/SSO?execution=e*s1"],
+	  "js": ["login_keiojp.js"]
+  }, {
+	  "matches": ["https://lms.keio.jp/*"],
+	  "js": ["login_canvas.js"]
+  }]
+}
