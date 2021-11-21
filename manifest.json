@@ -3,7 +3,13 @@
   "manifest_version": 3,
   "version": "0.1",
   "author": "fastriver_org",
-  "action": {},
+  "action": {
+    "default_title": "keio.jp自動ログイン設定",
+    "default_popup": "popup.html"
+  },
+  "permissions":[
+    "storage"
+  ],
   "content_scripts": [{
 	  "matches": ["https://auth.keio.jp/idp/profile/SAML2/Redirect/SSO?execution=e*s1"],
 	  "js": ["login_keiojp.js"]
