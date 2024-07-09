@@ -1,7 +1,7 @@
 {
   "name": "keio.jp自動ログインくん",
   "manifest_version": 3,
-  "version": "0.1",
+  "version": "0.2",
   "author": "fastriver_org",
   "action": {
     "default_title": "keio.jp自動ログイン設定",
@@ -11,7 +11,7 @@
     "storage"
   ],
   "content_scripts": [{
-	  "matches": ["https://auth.keio.jp/idp/profile/SAML2/Redirect/SSO?execution=e*s1"],
+	  "matches": ["https://auth.keio.jp/idp/profile/SAML2/*"],
 	  "js": ["login_keiojp.js"]
   }, {
 	  "matches": ["https://lms.keio.jp/*"],
