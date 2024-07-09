@@ -1,7 +1,7 @@
 {
   "name": "keio.jp自動ログインくん",
   "manifest_version": 3,
-  "version": "0.2",
+  "version": "0.3",
   "author": "fastriver_org",
   "action": {
     "default_title": "keio.jp自動ログイン設定",
